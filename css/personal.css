@@ -1,0 +1,288 @@
+/**
+* CONTENTS
+ *
+ * GENERIC
+ * Box-sizing...........Better default `box-sizing`.
+ * Layout...............HTML, BODY styles.
+ *
+ * MAIN
+ * Content..............Centering, general setup.
+ *
+ * CARDS
+ * Basic................Card styles.
+ * Content..............Card content.
+ *
+ * MODAL
+ * Modal Form...........Form styles
+ *
+ * Add-on Styles
+ * Icons................Materialize icons add-ons.
+*/
+
+/*------------------------------------*\
+  #GENERIC
+\*------------------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: antiquewhite;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*------------------------------------*\
+  #MAIN
+\*------------------------------------*/
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container-div {
+  height: 100%;
+  width: 100%;
+  margin: 0.8rem 0.2rem 4.2rem 0.2rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 120%;
+}
+h4 {
+  font-weight: bold;
+  margin: 1rem 0 1rem 0;
+}
+h5 {
+  font-size: 1.5rem;
+  margin: 1rem 0 1rem 0;
+}
+@media only screen and (max-device-width: 737px) {
+  h4 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+/*------------------------------------*\
+  #CARDS
+\*------------------------------------*/
+
+/* CARD SETUP STYLES */
+.card {
+  background-color: white;
+  width: 100%;
+  max-height: 80vh;
+  margin: 1rem auto;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow-x: auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+.card:hover {
+  -webkit-box-shadow: 0 40px 77px rgba(0, 0, 0, 0.22),
+    0 27px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 40px 77px rgba(0, 0, 0, 0.22), 0 27px 24px rgba(0, 0, 0, 0.2);
+  transform: translateY(-0.5rem);
+}
+@media only screen and (max-device-width: 737px) {
+  .card {
+    height: 90vh;
+  }
+}
+@media only screen and (min-width: 737px) {
+  .card {
+    width: 46rem;
+  }
+}
+
+.img-circle {
+  width: 7em;
+  height: 7em;
+  border-radius: 60px;
+  background-clip: padding-box;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 737px) {
+  .img-circle {
+    float: left;
+    margin-left: 1rem;
+    margin-right: 2rem;
+  }
+}
+
+.oneline-overflow {
+  white-space: nowrap;
+  overflow: auto;
+}
+@media only screen and (max-width: 737px) {
+  .oneline-overflow {
+    text-align: center;
+  }
+}
+
+/* CARD CONTENT STYLES */
+.double-hr {
+  border-top: 3px double #8c8b8b;
+}
+
+.p-spacing {
+  padding: 1em 0 1em 0;
+}
+
+.content-one {
+  margin: 1em 2.5em 1em 2.5em;
+}
+@media only screen and (max-device-width: 737px) {
+  .content-one {
+    margin: 0 0.5em 0 0.5em;
+  }
+}
+
+.section-break {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-spacing {
+  margin: 1em 1em 1em 1em;
+}
+@media only screen and (max-device-width: 737px) {
+  .icon-spacing {
+    margin: 0.5em 0.5em 0.5em 0.5em;
+  }
+}
+
+.icon-container {
+  text-align: center;
+  width: 100%;
+}
+.container-1 {
+  margin-bottom: 1em;
+}
+
+/*------------------------------------*\
+  #MODAL-FORM
+\*------------------------------------*/
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  max-height: 80%;
+}
+@media only screen and (max-width: 992px) {
+  .modal {
+    width: 90%;
+  }
+}
+
+.modal-form-row {
+  margin-bottom: 0px;
+}
+.modal-center {
+  text-align: center;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.btn-flat {
+  padding: 0 1rem 2.5rem 1rem;
+  font-weight: bold;
+  font-size: 1.35rem;
+  border: 2px solid;
+}
+
+.autofill-disclaimer {
+  text-align: center;
+}
+@media only screen and (min-device-width: 1025px) {
+  .autofill-disclaimer {
+    display: none;
+  }
+}
+
+/*------------------------------------*\
+  #ADD-ONS
+\*------------------------------------*/
+
+/* Custom styles for Materialize Font Awesome Icons */
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+pre {
+  padding: 16px 20px 0px;
+  background: #eee;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.info {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.margin-bottom {
+  margin-bottom: 0.5rem;
+}
+
+.fixed-action-btn-left {
+  position: fixed;
+  left: 23px;
+  bottom: 23px;
+  padding-top: 15px;
+  margin-bottom: 0;
+  z-index: 997;
+}

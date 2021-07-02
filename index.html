@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+<head>
+  <!-- Common Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="My website">
+  <meta name="description" content="My website">
+
+  <!-- Placeholder Github Favicon -->
+  <link rel="icon" type="image/x-icon" href="https://pages.github.com/favicon.ico" />
+
+  <title>My website</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="https://material-business-card.netlify.app/css/personal.css">
+  <link rel="stylesheet" href="https://material-business-card.netlify.app/css/materialize-social.css">
+</head>
+
+
+
+
+
+<body>
+
+  <main>
+    <div class="container-div">
+
+      <div class="card">
+
+        <div class="card-content content-one">
+          <div class="img-circle" style="background-image: url(images/dog_headshot.jpeg)"></div>
+          <h4 class="oneline-overflow">FIRSTNAME LASTNAME</h4>
+          <h5 class="oneline-overflow">Title, Location, or Tagline</h5>
+
+          <hr class="double-hr">
+
+          <p class="p-spacing">Summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum.</p>
+
+          <div class="section-break">
+            <section class="icon-container container-1">
+
+              <a class="waves-effect waves-light btn-floating social icon-spacing linkedin">
+                <i class="fa fa-linkedin"></i> Linkedin</a>
+
+              <a class="waves-effect waves-light btn-floating social icon-spacing angellist">
+                <i class="fa fa-angellist" style="background-color:black"></i> Angellist</a>
+
+              <a class="waves-effect waves-light btn-floating social icon-spacing product-hunt">
+                <i class="fa fa-product-hunt" style="background-color:#DA552F"></i> Product-hunt</a>
+
+              <a class="waves-effect waves-light btn-floating social icon-spacing github">
+                <i class="fa fa-github"></i> Github</a>
+
+              <a class="waves-effect waves-light btn-floating social icon-spacing medium">
+                <i class="fa fa-medium" style="background-color:#00ab6c"></i> Medium</a>
+
+              <a class="waves-effect waves-light btn-floating social icon-spacing twitter">
+                <i class="fa fa-twitter"></i> Twitter</a>
+
+              <a class="waves-effect waves-light btn-floating social icon-spacing instagram">
+                <i class="fa fa-instagram" style="background-color:#9b6954"></i> Instagram</a>
+
+            </section>
+          </div>
+
+          <div class="section-break">
+            <section class="icon-container footer-container">
+
+              <a id="call" class="waves-effect waves-light btn icon-spacing" style="background-color:#5BC236">
+                <i class="material-icons left">call</i>Call</a>
+
+              <a id="email" class="waves-effect waves-light btn icon-spacing" style="background-color:#007AFF">
+                <i class="material-icons left">email</i>Email</a>
+
+            </section>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <cutme>
+    <!-- Modal Structure -->
+    <div id="edit-form" class="modal">
+      <div class="modal-content">
+        <h4 class="modal-center">Edit Your Card ✏️</h4>
+        <h6 class="modal-center">(All fields are optional 😊)</h6>
+        <div style="margin-top:1.2em;display:flex;justify-content:center;align-items:center;">
+          <!-- sign in with linkedin button -->
+          <script type="in/Login"></script>
+        </div>
+        <p class="autofill-disclaimer"> *Disclaimer: Linkedin Autofill will not work on iOS 5+ </p>
+        <div class="row">
+          <form class="col s12">
+
+            <div class="row modal-form-row">
+              <h5>1. Link a profile picture</h5>
+              <div class="input-field col s12">
+                <input id="profile_picture" type="url" class="validate">
+                <label id="profile_picture_label" for="profile_picture">Image file URL</label>
+              </div>
+            </div>
+
+
+            <div class="row modal-form-row">
+              <h5>2. Add name, heading & summary</h5>
+              <div class="input-field col s12">
+                <input id="name" type="text" class="validate">
+                <label id="name_label" for="name">Name</label>
+              </div>
+            </div>
+
+            <div class="row modal-form-row">
+              <div class="input-field col s12">
+                <input id="heading" type="text" class="validate">
+                <label id="heading_label" for="heading">Heading</label>
+              </div>
+            </div>
+
+            <div class="row modal-form-row">
+              <div class="input-field col s12">
+                <textarea id="summary" type="text" class="materialize-textarea validate"></textarea>
+                <label id="summary_label" for="summary">Summary (use HTML syntax for links)</label>
+              </div>
+            </div>
+
+
+            <div class="row modal-form-row">
+              <h5>3. Link your social media</h5>
+              <div class="input-field col s12">
+                <input id="linkedin_url" type="url" class="validate">
+                <label id="linkedin_url_label" for="linkedin_url">Linkedin URL</label>
+              </div>
+            </div>
+
+            <div class="row modal-form-row">
+              <div class="input-field col s12">
+                <input id="angellist_url" type="url" class="validate">
+                <label for="angellist_url">Angel List URL</label>
+              </div>
+            </div>
+
+            <div class="row modal-form-row">
+              <div class="input-field col s12">
+                <input id="ph_url" type="url" class="validate">
+                <label for="ph_url">Product Hunt URL</label>
+              </div>
+            </div>
+
+            <div class="row modal-form-row">
+              <div class="input-field col s12">
+                <input id="github_url" type="url" class="validate">
+                <label for="github_url">Github URL</label>
+              </div>
+            </div>
+
+            <div class="row modal-form-row">
+              <div class="input-field col s12">
+                <input id="medium_url" type="url" class="validate">
+                <label for="medium_url">Medium URL</label>
+              </div>
+            </div>
+
+            <div class="row modal-form-row">
+              <div class="input-field col s12">
+                <input id="twitter_url" type="url" class="validate">
+                <label for="twitter_url">Twitter URL</label>
+              </div>
+            </div>
+
+            <div class="row modal-form-row">
+              <div class="input-field col s12">
+                <input id="instagram_url" type="url" class="validate">
+                <label for="instagram_url">Instagram URL</label>
+              </div>
+            </div>
+
+            <div class="row modal-form-row">
+              <h5>4. Add email & contact number</h5>
+              <div class="input-field col s12">
+                <input id="number" type="tel" class="validate">
+                <label for="number">Phone number (e.g. 1-405-555-5555)</label>
+              </div>
+            </div>
+
+            <div class="row modal-form-row">
+              <div class="input-field col s12">
+                <input id="emailaddress" type="email" class="validate">
+                <label id="emailaddress_label" for="emailaddress">Email address</label>
+              </div>
+            </div>
+
+            <div class="row modal-form-row">
+              <h5>5. Change CSS background color (default: "antiquewhite")</h5>
+              <div class="input-field col s12">
+                <input id="bg_color" type="text" class="validate">
+                <label for="bg_color">Enter color name, HEX value, or RGB value</label>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <form id="myForm">
+          <input class="modal-action modal-close btn-flat" type="submit" value="Submit">
+        </form>
+      </div>
+
+    </div>
+
+
+    <!-- Floating edit and download button -->
+    <div class="fixed-action-btn vertical">
+      <a class="waves-effect waves-light btn-floating btn-large red modal-trigger margin-bottom" href="#edit-form"
+        id="click-form">
+        <i class="material-icons">edit</i>
+      </a>
+      <a class="waves-effect waves-light btn-floating btn-large blue" id="dwn-btn"
+        value="Download dinamically generated text file">
+        <i class="material-icons">cloud_download</i>
+      </a>
+    </div>
+
+    <!-- Linkedin Javascript SDK -->
+    <script type="text/javascript" src="//platform.linkedin.com/in.js">
+      api_key: '86r08zcwsl1zoq'
+      onLoad: 'onLinkedInLoad'
+      scope: 'r_basicprofile r_emailaddress'
+    </script>
+
+    <script type="text/javascript">
+      // Setup an event listener to make an API call once auth is complete
+      function onLinkedInLoad() {
+        IN.Event.on(IN, "auth", getProfileData);
+        // Custom Linkedin autofill button with jquery
+        $('a[id*=li_ui_li_gen_]').css({ 'marginBottom': '1em', 'marginTop': '1em' })
+          .html('<img src="images/linkedin-autofill.png" width="120" border="0" />');
+      }
+
+      // Use the API call wrapper to request the member's profile data
+      function getProfileData() {
+        IN.API.Profile("me").fields("id", "first-name", "last-name",
+          "headline", "location", "summary", "picture-url",
+          "public-profile-url", "email-address").result(displayProfileData).error(onError);
+      }
+
+      // Handle the successful return from the API call
+      function displayProfileData(data) {
+        var user = data.values[0];
+        document.getElementById('profile_picture').value = user.pictureUrl;
+        document.getElementById('profile_picture_label').className = "active";
+
+        document.getElementById('name').value = user.firstName + ' ' + user.lastName;
+        document.getElementById('name_label').className = "active";
+
+        document.getElementById('heading').value = user.headline + ' in ' + user.location.name;
+        document.getElementById('heading_label').className = "active";
+
+        document.getElementById('emailaddress').value = user.emailAddress;
+        document.getElementById('emailaddress_label').className = "active";
+
+        document.getElementById('summary').value = user.summary;
+        document.getElementById('summary_label').className = "active";
+
+        document.getElementById('linkedin_url').value = user.publicProfileUrl;
+        document.getElementById('linkedin_url_label').className = "active";
+      }
+
+      // Handle an error response from the API call
+      function onError(error) {
+        console.log(error);
+      }
+    </script>
+  </cutme>
+
+  <!-- Necessary Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  <cutme>
+    <!-- Only this website Scripts -->
+    <script src="./js/main.js"></script>
+    <script async src="https://buttons.github.io/buttons.js"></script>
+  </cutme>
+</body>
+
+
+
+
+
+</html>
