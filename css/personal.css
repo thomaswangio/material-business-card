@@ -133,6 +133,7 @@ h5 {
 }
 
 .img-circle {
+  display: none;
   width: 7em;
   height: 7em;
   border-radius: 60px;
